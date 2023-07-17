@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #323339;
+}
+
+@font-face {
+    font-family: LemonMedium;
+    src: url('./font/LEMONMILK-Medium.otf');
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 5rem auto;
+}
+
+.control-container{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 15px #000;
+    background-color: #F4F1EA;
+}
+
+.control-describe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    padding: 1rem;
+}
+
+.desc h2, h3, span, p{
+    margin: 1rem 0;
+    text-align: justify;
+    color: #fff;
+}
+
+.desc h2{
+    font-family: LemonMedium;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.desc h3{
+    font-family: LemonMedium;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.desc span{
+    font-family: LemonMedium;
+    font-size: 25px;
+}
+
+.color-menu{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.color-box{
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 4px solid #fff;
+    border-radius: 0.5rem;
+}
+
+.color-box:hover{
+    scale: 110%;
+}
+
+#black{
+    background-color: #323339;
+}
+
+#blue{
+    background-color: #4DB8F4;
+}
+
+#pink{
+    background-color: #E5429D;
+}
+
+#purble{
+    background-color: #4D2F9D;
+}
+
+#red{
+    background-color: #A61B4E;
+}
+
+.buy-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    padding: 0.7rem;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+}
+
+
+.buy-btn:hover{
+    scale: 102%;
+    background-color: #444444;
+}
+
+.buy-icon{
+    width: 10%;
+    margin: 0 1rem 0 0;
+}
+
+@keyframes vibrate {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .vibrate {
+    animation: vibrate 0.5s;
+  }
